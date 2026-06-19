@@ -1,0 +1,8 @@
+# Dependências
+node_modules/
+
+# Banco de dados
+pgdata/
+
+# Variáveis de ambiente
+.env
