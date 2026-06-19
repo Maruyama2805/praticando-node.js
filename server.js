@@ -44,5 +44,12 @@ server.delete('/videos/:id', (request, reply) => {
 
 server.listen({
     port: process.env.PORT ?? 3333, 
-})
+    host: '0.0.0.0'
+}, function (err, address) {
+    if (err) {
+        console.error(err)
+        process.exit(1)
+    }
+    console.log(`Servidor rodando em ${address}`)
+});
 
